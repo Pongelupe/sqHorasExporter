@@ -1,0 +1,29 @@
+<form [formGroup]="parentForm">
+  <div class="nes-container with-title is-centered">
+    <p class="title">SqHoras - Exporter</p>
+    <h2>What is a man? A miserable little pile of secrets. But enough talk… Have at you!</h2>
+    <h4>Essa aplicação exporta os dados do
+      <a href="http://www.squadra.com.br/sqhoras/">SqHoras</a> para o
+      <a href="http://www.squadra.com.br/Corpore.Net/Login.aspx?autoload=false">PortalRM</a>
+    </h4>
+  </div>
+  <div class="logins">
+    <app-login system="SqHoras" defaultUser="pedro.pongelupe" [parentForm]="parentForm" index="0"></app-login>
+    <app-login system="PortalRM" defaultUser="03050" [parentForm]="parentForm" index="1"></app-login>
+  </div>
+  <div class="nes-container radio-excel">
+    <p>Deseja gerar Excel?</p>
+    <label>
+      <input type="radio" class="nes-radio" name="generateExcel" value="true" formControlName="generateExcel" checked />
+      <span>Yes</span>
+    </label>
+
+    <label>
+      <input type="radio" class="nes-radio" name="generateExcel" value="false" formControlName="generateExcel" />
+      <span>No</span>
+    </label>
+  </div>
+  <button type="button" [ngClass]="{'nes-btn': true, 'is-disabled': !parentForm.valid, 'is-primary': parentForm.valid}" [disabled]="!parentForm.valid"
+    [hidden]="processing" (click)="send()">Enviar</button>
+  <progress class="nes-progress is-pattern" [value]="progressValue" [hidden]="!processing" max="100"></progress>
+</form>

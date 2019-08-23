@@ -1,0 +1,13 @@
+<form [formGroup]="loginForm">
+  <div class="nes-container with-title is-centered login">
+    <p class="title">{{system}}</p>
+    <div class="nes-field">
+      <label for="name_field">Username</label>
+      <input type="text" class="nes-input" placeholder="{{defaultUser}}" formControlName="username">
+    </div>
+    <div class="nes-field">
+      <label for="name_field">Password</label>
+      <input type="password" class="nes-input" formControlName="password">
+    </div>
+  </div>
+</form>
