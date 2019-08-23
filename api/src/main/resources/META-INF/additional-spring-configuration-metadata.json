@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "name": "app.proxy.host",
+      "type": "java.lang.String",
+      "description": "Description for app.proxy.port."
+    },
+    {
+      "name": "app.proxy.port",
+      "type": "java.lang.Integer",
+      "description": "Description for app.proxy.port."
+    },
+    {
+      "name": "app.t2.url",
+      "type": "java.lang.String",
+      "description": "Description for app.t2.url."
+    },
+    {
+      "name": "app.certponto.url",
+      "type": "java.lang.String",
+      "description": "Description for app.certponto.url."
+    },
+    {
+      "name": "app.certponto.sso.url",
+      "type": "java.lang.String",
+      "description": "Description for app.certponto.sso.url."
+    },
+    {
+      "name": "app.clarity.url",
+      "type": "java.lang.String",
+      "description": "Description for app.clarity.url."
+    }
+  ]
+}
