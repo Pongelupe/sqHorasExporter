@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.prosegur</groupId>
 	<artifactId>apontamento</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>apontamento</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -113,7 +113,7 @@
 							<outputDirectory>${basedir}/target/classes/static/</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/apontamento-client/dist/apontamento-client</directory>
+									<directory>${basedir}/public/dist/sqExporter</directory>
 								</resource>
 							</resources>
 						</configuration>
